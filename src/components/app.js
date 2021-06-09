@@ -4,7 +4,9 @@ import MoviesList from "./MoviesList";
 import Header from "./header";
 import Footer from "./footer";
 import ErrorBoundary from "./error.boundary";
+import WithLoading from "./with.loading";
 
+const MoviesListWithLoading = WithLoading(MoviesList)
 
 export default class App extends React.Component {
     render() {
@@ -12,7 +14,7 @@ export default class App extends React.Component {
             <div className="component-app">
                 <Header/>
                 <ErrorBoundary>
-                    <MoviesList/>
+                    <MoviesListWithLoading isLoading={false}/>
                 </ErrorBoundary>
                 <Footer>
                     some cool links
