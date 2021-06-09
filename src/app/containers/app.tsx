@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 // import "./app.css";
 import MoviesList from "./MoviesList";
 import Header from "../components/header";
@@ -16,9 +16,9 @@ export default class App extends React.Component {
                 <ErrorBoundary>
                     <MoviesListWithLoading isLoading={false}/>
                 </ErrorBoundary>
-                    <Footer>
-                        some cool links
-                    </Footer>
+                <Footer>
+                    some cool links
+                </Footer>
             </div>
         )
     }
