@@ -2,7 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-
+const { CheckerPlugin } = require('awesome-typescript-loader')
 const BUILD_DIR = path.resolve(__dirname, './dist');
 const APP_DIR = path.resolve(__dirname, './src');
 
@@ -17,8 +17,8 @@ const miniCssPlugin = new MiniCssExtractPlugin({
 
 module.exports =
     {
-    // the app entry point is /src/index.js
-    entry: APP_DIR + '/index.js',
+    // the app entry point is /src/index.tsx
+    entry: APP_DIR + '/index.tsx',
     output: {
         // the output of the webpack build will be in /dist directory
         path: BUILD_DIR,
@@ -75,6 +75,6 @@ module.exports =
         }
     },
     plugins: [
-        htmlPlugin,
+        htmlPlugin,new CheckerPlugin(),
         providePlugin, miniCssPlugin]
 }

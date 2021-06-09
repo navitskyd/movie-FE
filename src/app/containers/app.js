@@ -1,10 +1,10 @@
 import React from "react";
 // import "./app.css";
 import MoviesList from "./MoviesList";
-import Header from "./header";
-import Footer from "./footer";
-import ErrorBoundary from "./error.boundary";
-import WithLoading from "./with.loading";
+import Header from "../components/header";
+import Footer from "../components/footer";
+import ErrorBoundary from "../hooks/error.boundary";
+import WithLoading from "../hooks/with.loading";
 
 const MoviesListWithLoading = WithLoading(MoviesList)
 
@@ -16,9 +16,9 @@ export default class App extends React.Component {
                 <ErrorBoundary>
                     <MoviesListWithLoading isLoading={false}/>
                 </ErrorBoundary>
-                <Footer>
-                    some cool links
-                </Footer>
+                    <Footer>
+                        some cool links
+                    </Footer>
             </div>
         )
     }

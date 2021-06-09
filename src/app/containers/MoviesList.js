@@ -1,5 +1,5 @@
 import React from "react";
-import MovieCard from "./movie.card";
+import MovieCard from "../components/movie.card";
 
 let movies = [
     {
