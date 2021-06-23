@@ -43,10 +43,7 @@ module.exports =
             },
             {
                 test: /\.css$/,
-                use: [MiniCssExtractPlugin.loader, {
-                    loader: "style-loader",
-                    options: {injectType: 'linkTag'}
-                }, "css-loader"]
+                use: [MiniCssExtractPlugin.loader,  "css-loader"]
             }, {
                 test: /\.less$/,
                 use: [MiniCssExtractPlugin.loader, "style-loader", "css-loader", "less-loader"]
@@ -58,11 +55,12 @@ module.exports =
                     useCache: true
                 }
             }, {
-                test: /\.(ttf|eot|svg|woff|png)$/,
-                loader: 'file-loader',
-                options: {
-                    name: '[path][name].[ext]?[hash]'
-                }
+                test: /\.(ttf|eot|svg|woff|png|jpg)$/i,
+                type: 'asset/resource',
+                // loader: 'file-loader',
+                // options: {
+                //     name: '[path][name].[ext]?[hash]'
+                // }
             }
         ]
     },

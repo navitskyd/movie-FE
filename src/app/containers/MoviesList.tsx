@@ -3,25 +3,47 @@ import MovieCard from "../components/movie.card";
 
 let movies = [
     {
-        title: 'Rick and Morty',
-        description: 'Animated Film',
-        id: 'r4323'
-    }, {
-        title: 'Rambo II',
-        description: 'Action Film',
-        id: 'r4325'
-    }, {
-        title: 'Pulp Fiction',
-        description: 'Crime Film',
-        id: 'r4725'
+        title: "Rick and Morty",
+        description: "Animated Film",
+        id: "r4323",
+        cover: "rick.jpg",
+        year:1998
+    },
+    {
+        title: "Rambo II",
+        description: "Action Film",
+        cover: "rambo.jpg",
+        id: "r4325",
+        year:1999
+    },
+    {
+        title: "Pulp Fiction",
+        description: "Crime Film",
+        id: "r4725",
+        cover:"pulp.jpg"
+        ,year:2001
     }
-];
-
+,
+    {
+        title: "Pulp Fiction",
+        description: "Crime Film",
+        id: "r4725",
+        cover:"pulp.jpg"
+        ,year:2002
+    },
+    {
+        title: "Rick and Morty",
+        description: "Animated Film",
+        id: "r4323",
+        cover: "rick.jpg"
+        ,year:2005
+    },];
 export default function MoviesList() {
     return (
         <>
             {movies.map((movie) => (
-                <MovieCard title={movie.title} description={movie.description} key={movie.id}/>
+                <MovieCard title={movie.title} description={movie.description} key={movie.id}
+                           cover={movie.cover} year={movie.year}/>
             ))}
         </>
     )

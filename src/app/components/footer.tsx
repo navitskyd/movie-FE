@@ -1,9 +1,11 @@
 import * as React from "react";
-// import './styles.css'
+import '../styles/styles.css'
 
 const Footer = (props) => {
     return (
-        <div className="Footer"> {props.children} </div>
+        <div className="footer">
+            <div className="footer-title"><span className="bolder">netflix</span>roulette {props.children}</div>
+        </div>
     )
 };
 
