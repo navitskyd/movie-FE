@@ -1,4 +1,5 @@
 import * as React from "react";
+import './add.movie.css'
 
 
 export default function AddMovie() {

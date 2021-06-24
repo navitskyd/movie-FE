@@ -1,0 +1,29 @@
+.header {
+    height: 400px;
+}
+
+.header-cover {
+    height: 100%;
+    background-image: url("./img/bg.jpg");
+    filter: blur(1px) opacity(90%) brightness(0.4);
+    -webkit-filter: blur(1px) opacity(90%) brightness(0.4);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-title {
+    font-size: 30px;
+    color: #F65251;
+}
+
+.header-title {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.header-title .bolder {
+    font-weight: bolder;
+}

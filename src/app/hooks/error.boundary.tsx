@@ -1,5 +1,5 @@
 import * as React from "react";
-// import './styles.css';
+// import './common.css';
 
 function ErrorBoundary(props){
     //fallback UI

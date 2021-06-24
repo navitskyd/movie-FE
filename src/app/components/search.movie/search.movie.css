@@ -1,0 +1,24 @@
+.search-movie {
+    position: inherit;
+    top: 175px;
+    right: 300px;
+    width: 250px;
+    height: 50px;
+
+}
+
+.search-movie .text {
+    top: -1.3em;
+    left: 4em;
+}
+
+
+.input.search-movie {
+    position: inherit;
+    top: 160px;
+    left: 250px;
+    font-size: 25px;
+    width: 550px;
+    border-radius: 10px;
+    background-color: #232323;
+}

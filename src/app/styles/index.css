@@ -1,16 +1,30 @@
-html {
-    height: 100%;
-    font-size: 10px;
+
+
+
+
+
+
+
+
+.first-row{
+    display: flex;
+}
+.Genres {
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 
-body {
-    background-color: black;
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    height: 100%;
+.Genres span {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-#root {
-    height: 100%;
+.SortBy {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-left: auto;
+
+}
+.total-movies{
+    text-transform: lowercase;
 }

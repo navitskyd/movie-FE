@@ -1,5 +1,6 @@
 import * as React from 'react'
 import * as PropTypes from 'prop-types'
+import './movie.card.css'
 import MovieCover from "./movie.cover";
 import MovieTitle from "./movie.title";
 import MovieDescription from "./movie.description";
