@@ -8,7 +8,7 @@ import Middle from "../middle/middle.container";
 
 export default () => {
     return (
-        <div className="component-app">
+        <div className="app">
             <TopContainer/>
             <Middle/>
             <Footer>
