@@ -46,7 +46,9 @@ module.exports =
                 use: [MiniCssExtractPlugin.loader,  "css-loader", "postcss-loader"]
             }, {
                 test: /\.less$/,
-                use: [MiniCssExtractPlugin.loader, "style-loader", "css-loader", "less-loader"]
+                use: [MiniCssExtractPlugin.loader
+                    // , "style-loader"
+                    , "css-loader", "less-loader"]
             },
             {
                 test: /\.tsx?$/,
