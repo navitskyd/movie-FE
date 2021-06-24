@@ -57,10 +57,6 @@ module.exports =
             }, {
                 test: /\.(ttf|eot|svg|woff|png|jpg)$/i,
                 type: 'asset/resource',
-                // loader: 'file-loader',
-                // options: {
-                //     name: '[path][name].[ext]?[hash]'
-                // }
             }
         ]
     },
