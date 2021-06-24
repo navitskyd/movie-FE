@@ -14,7 +14,6 @@
 .button.grey .background {
     background-color: #555555;
     filter: opacity(50%);
-    -webkit-filter: opacity(50%);
 }
 
 .button.red .background {
