@@ -1,6 +1,6 @@
 import * as React from 'react'
 import * as PropTypes from 'prop-types'
-
+import './total.movies.css'
 
 export default function TotalMovies(props) {
     return (

@@ -2,3 +2,6 @@
     background-color: #232323;
     color: #FFFFFF;
 }
+.first-row{
+    display: flex;
+}
