@@ -1,8 +1,8 @@
 import * as React from "react";
 import Header from "../components/header";
-import AddMovie from "../components/AddMovie";
-import SearchButton from "../components/SearchButton";
-import SearchInput from "../components/SearchInput";
+import AddMovie from "../components/add.movie";
+import SearchButton from "../components/search.button";
+import SearchInput from "../components/search.input";
 
 export default class Top extends React.Component {
     render() {

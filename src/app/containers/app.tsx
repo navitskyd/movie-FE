@@ -1,8 +1,8 @@
 import * as React from "react";
 import "../styles/app.css";
 import Footer from "../components/footer";
-import Top from "./Top";
-import Middle from "./Middle";
+import Top from "./top";
+import Middle from "./middle";
 
 
 export default class App extends React.Component {

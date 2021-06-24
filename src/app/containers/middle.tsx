@@ -1,5 +1,5 @@
 import * as React from "react";
-import MoviesList from "./MoviesList";
+import MoviesList from "./movies.list";
 import ErrorBoundary from "../hooks/error.boundary";
 import WithLoading from "../hooks/with.loading";
 import Genres from "../components/genres";
