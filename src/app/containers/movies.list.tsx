@@ -38,13 +38,11 @@ const movies = [
         year: 2005
     }
 ];
-export default function MoviesList() {
-    return (
-        <>
-            {movies.map((movie) => (
-                <MovieCard title={movie.title} description={movie.description} key={movie.id}
-                           cover={movie.cover} year={movie.year}/>
-            ))}
-        </>
-    )
-}
+export default () => (
+    <>
+        {movies.map((movie) => (
+            <MovieCard title={movie.title} description={movie.description} key={movie.id}
+                       cover={movie.cover} year={movie.year}/>
+        ))}
+    </>
+)
