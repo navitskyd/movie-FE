@@ -4,7 +4,6 @@
   "description": "",
   "private": "true",
   "scripts": {
-    "start": "webpack-dev-server --open",
     "serve": "webpack serve --open --config webpack.config.dev.js",
     "build:prod": "webpack --config webpack.config.prod.js",
     "build:dev": "webpack --config webpack.config.dev.js --progress",
