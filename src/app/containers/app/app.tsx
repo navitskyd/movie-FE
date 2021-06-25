@@ -12,7 +12,7 @@ export default () => {
             <TopContainer/>
             <Middle/>
             <Footer>
-                2021
+                {new Date().getFullYear()}
             </Footer>
         </div>
     )
