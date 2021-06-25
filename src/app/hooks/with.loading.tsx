@@ -1,6 +1,5 @@
 import * as React from "react";
 
-// import './common.css';
 
 function WithLoading(Component) {
     const LoadIndicator = () => <h2>Loading...</h2>
