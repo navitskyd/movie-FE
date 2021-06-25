@@ -1,8 +1,8 @@
 import * as React from 'react'
 
 
-export default function MovieCover(cover) {
-    const coverImg = require('./images/' + cover.cover);
+export default ({cover}) => {
+    const coverImg = require(`./images/${cover}`);
     return <img src={coverImg}/>
 }
 
