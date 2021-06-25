@@ -45,6 +45,7 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
+    "@bem-react/classname": "^1.5.11",
     "autoprefixer": "^10.2.6",
     "jest": "^27.0.4",
     "less-loader": "^9.0.0",
