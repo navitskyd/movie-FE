@@ -1,8 +1,8 @@
 import * as React from 'react'
-import './genres.css'
+import './genres.less'
 
 export default () => (
-    <div className='Genres'>
+    <div className='genres'>
         <span>All</span>
         <span>Documentary</span>
         <span>Comedy</span>
