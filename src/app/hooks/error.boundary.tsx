@@ -1,16 +1,29 @@
 import * as React from "react";
 
-function ErrorBoundary(props){
-    //fallback UI
-    const OopsText=()=>(
-        <h2>
-            Oops, something went wrong
-        </h2>
-    )
+class ErrorBoundary extends React.Component <any,any>{
+    constructor(props) {
+        super(props);
+        this.state = {hasError: false}
+    }
 
-    let isOK=true;
 
-    return <>{isOK?props.children:<OopsText/>}</>
+    render() {
+        if (this.state.hasError) {
+            // You can render any custom fallback UI
+            return <h1>Something went wrong.</h1>;
+        }
+
+        return this.props.children;
+    }
+
+    componentDidCatch(error: Error, errorInfo: React.ErrorInfo) {
+        super.componentDidCatch(error, errorInfo);
+    }
+
+    static getDerivedStateFromError(error) {
+        // Update state so the next render will show the fallback UI.
+        return { hasError: true };
+    }
 }
 
 export default ErrorBoundary;
