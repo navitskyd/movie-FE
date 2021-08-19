@@ -4,7 +4,7 @@
   "description": "",
   "private": "true",
   "scripts": {
-    "serve": "webpack serve --open --config webpack.config.dev.js",
+    "serve": "webpack serve --config webpack.config.dev.js",
     "build:prod": "webpack --config webpack.config.prod.js",
     "build:dev": "webpack --config webpack.config.dev.js --progress",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,14 +20,24 @@
     "url": "https://github.com/navitskyd/movie-FE/issues"
   },
   "homepage": "https://github.com/navitskyd/movie-FE#readme",
+  "browserslist": [
+    "last 2 versions"
+  ],
   "devDependencies": {
     "@babel/core": "^7.14.3",
     "@babel/plugin-proposal-class-properties": "^7.13.0",
     "@babel/preset-env": "^7.14.4",
     "@babel/preset-react": "^7.13.13",
+    "@types/react": "^17.0.11",
+    "@types/react-dom": "^17.0.7",
+    "@typescript-eslint/eslint-plugin": "^4.28.0",
+    "@typescript-eslint/parser": "^4.28.0",
+    "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.2.2",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^5.2.6",
+    "eslint": "^7.29.0",
+    "eslint-plugin-react": "^7.24.0",
     "html-webpack-plugin": "^5.3.1",
     "style-loader": "^2.0.0",
     "webpack": "^5.38.1",
@@ -35,12 +45,16 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
+    "@bem-react/classname": "^1.5.11",
+    "autoprefixer": "^10.2.6",
     "jest": "^27.0.4",
     "less-loader": "^9.0.0",
     "loader": "^2.1.1",
-    "lodash": "^4.17.21",
     "mini-css-extract-plugin": "^1.6.0",
+    "postcss-loader": "^6.1.0",
+    "prop-types": "^15.7.2",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "typescript": "^3.9.9"
   }
 }

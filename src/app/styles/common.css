@@ -1,0 +1,36 @@
+
+.button {
+    cursor: pointer;
+    height: 40px;
+    padding: -10px;
+}
+
+.button .background {
+    border-radius: 6px;
+    height: 100%;
+    margin: -10px;
+}
+
+.button.grey .background {
+    background-color: #555555;
+    filter: opacity(50%);
+}
+
+.button.red .background {
+    background-color: #F65251;
+}
+
+.button .text {
+    text-transform: uppercase;
+    font-size: 20px;
+    top: -1em;
+    position: relative;
+}
+
+.button.grey .text {
+    color: #F65251;
+}
+
+.button.red .text {
+    color: #FFFFFF;
+}

@@ -1,0 +1,13 @@
+.MovieCard {
+    display: inline-grid;
+    margin: 40px;
+}
+.MovieCard img {
+    width: 280px;
+}
+.MovieCard .under-cover{
+    display: flex;
+}
+.MovieCard .under-cover .year{
+    margin-left: auto;
+}
